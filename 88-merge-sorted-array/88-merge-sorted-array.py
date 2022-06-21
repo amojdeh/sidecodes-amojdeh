@@ -3,14 +3,5 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        if n == 0:
-            pass
-        
-        elif m == 0:
-            nums1[:] = nums2
-            
-        else:
-            
-            nums1[:] = nums1[:m]
-            nums1[:] += nums2
-            nums1.sort()
+        nums1[m:] = nums2[:n]
+        nums1.sort()
