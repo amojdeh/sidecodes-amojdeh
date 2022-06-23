@@ -1,6 +1,5 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        sum_square = 0
         seen = []
         while True:
             if n == 1:
