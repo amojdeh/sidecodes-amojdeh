@@ -3,4 +3,6 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        s[:] = s[::-1]
+        # s[:] = s[::-1]
+        
+        s.reverse()
