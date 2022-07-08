@@ -4,7 +4,7 @@ class Solution:
         
         if len(flowerbed) == 1:
             if flowerbed[0] == 0:
-                return n == 1 or n == 0
+                return n <= 1
         
         
         for i in range(len(flowerbed)):
