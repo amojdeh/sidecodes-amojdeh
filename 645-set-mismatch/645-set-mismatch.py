@@ -4,11 +4,13 @@ class Solution:
         l = list(range(1, len(nums)+1))
         print(l)
         ans = []
-        for i in l:
-            if i not in nums:
-                ans.append(i)
         for i in nums:
             if i in d:
-                return [i, ans[0]]
+                ans.append(i)
             else:
                 d[i] = 1
+                
+        for i in l:
+            if i not in d:
+                ans.append(i)
+        return ans
