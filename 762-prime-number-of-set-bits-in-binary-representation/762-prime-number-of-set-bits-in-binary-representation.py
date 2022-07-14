@@ -4,10 +4,7 @@ class Solution:
         
         def count_bits(x):
             count = 0
-            for i in bin(x)[2:]:
-                count += int(i)
-            return count
-        
+            return bin(x).count('1')
         ans = 0
         for i in range(left, right + 1):
             if count_bits(i) in primes:
